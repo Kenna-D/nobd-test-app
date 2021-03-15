@@ -3,26 +3,26 @@
 [
   {
     "id": 1,
-    "name": "name1",
-    "details": "details",
+    "name": "Wand 1",
+    "details": "11 inches long that features a phoenix feather core and was made from holly. It is believed that wands made from holly select wizards who are engaged in spiritual or dangerous conquests.",
     "img": "https://alivans.com/wp-content/uploads/2016/02/EBONY_THUMB.jpg"
   },
   {
     "id": 2,
-    "name": "name2",
-    "details": "details",
+    "name": "Wand 2",
+    "details": "12 3/4 inches long, made of walnut, and contained a dragon heartstring core. Ollivander described this wand as 'unyielding', may also be a very telling characteristic of the owner.",
     "img": "https://www.4cosplay.net/media/catalog/product/cache/1/image/650x650/9df78eab33525d08d6e5fb8d27136e95/h/a/harry_potter_hibiscus_s_wand_1_.jpg"
   },
   {
     "id": 3,
-    "name": "name3",
-    "details": "details",
+    "name": "Wand 3",
+    "details": "10 inch wand that was made of hawthorn wood and a unicorn hair core. Wands made with cores of unicorn hair are known to produce the most consistent magic, and are the most faithful of wands. Although, they are not known to be the most powerful wands, especially when compared to those with dragon heartstring cores.",
     "img": "https://image.harrods.com/harry-potter-harry-potter-collectible-wand_15245222_26234399_1000.jpg"
   },
   {
     "id": 4,
-    "name": "name4",
-    "details": "details",
+    "name": "Wand 4",
+    "details": "9 1/2 inches long, was made of fir, and also fashioned with a dragon heartstring core. Wands fashioned with the wood of firs were known to be resilient, like their masters, and were dubbed the 'survivors' wands.",
     "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr4GYcXfqV9qBzMury0oEGt3aHZQaQZNHfLQ&usqp=CAU"
   }
 ]

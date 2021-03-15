@@ -16,7 +16,7 @@ const Wizard = props => {
 
   return (
     <div>
-      <h1>Chosen Wand</h1>
+      <h1>Chosen Wands</h1>
       <div className='chosenContainer'>
         {mappedWands}
       </div>

@@ -31,20 +31,21 @@ class ChosenElements extends Component{
         ? (
           <div>
             <input 
+              className="input"
               value={this.state.userInput} 
               onChange={e => this.handleInput(e.target.value)}/>
-            <button onClick={() => this.handleEdit(this.props.wand.id)}>Submit</button>
+            <button onClick={() => this.handleEdit(this.props.wand.id)} className="submit">Submit</button>
           </div>
         )
         : (
           <div>
             <p>{this.props.wand.name}</p>
-            <button onClick={this.handleClick}>Rename</button>
+            <button onClick={this.handleClick} className="rename">Rename</button>
           </div>
         )
         }
         
-        <button onClick={() => this.props.deleteFn(this.props.wand.id)}>Return</button>
+        <button onClick={() => this.props.deleteFn(this.props.wand.id)} className="return">Return</button>
       </div>
     )
   }

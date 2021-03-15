@@ -19,7 +19,7 @@ class Grass extends Component{
         <div onClick={this.handleSelect}>
             <img className="pictures" src={this.props.wands.img} alt={this.props.wands.name}/>
             <p>{this.props.wands.name}</p>
-            <p>{this.props.wands.details}</p>
+            <p className='details'>{this.props.wands.details}</p>
         </div>
     )
   }

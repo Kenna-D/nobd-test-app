@@ -15,9 +15,9 @@ class App extends Component {
 
   }
 
-  // componentDidMount(){
-  //   this.chosenWands();
-  // }
+  componentDidMount(){
+    this.chosenWands();
+  }
 
   chosenWands = () => {
     axios.get('/api/picked')
