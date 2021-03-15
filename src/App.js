@@ -63,6 +63,7 @@ class App extends Component {
     
       <div className="App">
         <Header />
+        
         <Finder pickFn={this.pickWand}/>
         <Wizard 
         wands={this.state.chosenElements}
