@@ -1,25 +1,76 @@
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import axios from 'axios';
+
+import Header from './Components/Header';
+import Finder from './Components/Finder';
+import Wizard from './Components/Wizard';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(){
+    super()
+    this.state = {
+      chosenElements: []
+    }
+
+  }
+
+  componentDidMount(){
+    this.chosenWands();
+  }
+
+  chosenWands = () => {
+    axios.get('/api/picked')
+      .then(res => {
+        
+        this.setState({chosenElements: res.data});
+      })
+      .catch(err => console.log(err));
+      // console.log(this.pickedWands)
+  }
+
+  pickWand = (wand) => {
+    
+    axios.post('/api/picked', {wand})
+      .then(res => {
+        
+        this.setState({chosenElements: res.data})
+      })
+      .catch(err => console.log(err))
+  }
+
+  editName = (id, newName) => {
+    let body = {name: newName}
+    axios.put(`/api/picked/${id}`)
+      .then(res => {
+        this.setState({ chosenElements: res.data })
+      })
+      .catch(err => console.log(err))
+  }
+
+  deleteWand = (id) => {
+    axios.delete(`/api/picked/${id}`)
+      .then(res => {
+        this.setState({chosenElements: res.data})
+      })
+      .catch(err => console.log(err))
+  }
+
+  render(){
+   
+    return (
+    
+      <div className="App">
+        <Header />
+        <Finder pickFn={this.pickWand}/>
+        <Wizard 
+        wands={this.state.chosenElements}
+        nameFn={this.editName}
+        deleteFn={this.deleteWand}
+        />
+      </div>
+    );
+  }
 }
 
 export default App;

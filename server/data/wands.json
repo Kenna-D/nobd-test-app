@@ -1,0 +1,29 @@
+
+
+[
+  {
+    "id": 1,
+    "name": "name1",
+    "details": "details",
+    "img": "https://alivans.com/wp-content/uploads/2016/02/EBONY_THUMB.jpg"
+  },
+  {
+    "id": 2,
+    "name": "name2",
+    "details": "details",
+    "img": "https://www.4cosplay.net/media/catalog/product/cache/1/image/650x650/9df78eab33525d08d6e5fb8d27136e95/h/a/harry_potter_hibiscus_s_wand_1_.jpg"
+  },
+  {
+    "id": 3,
+    "name": "name3",
+    "details": "details",
+    "img": "https://image.harrods.com/harry-potter-harry-potter-collectible-wand_15245222_26234399_1000.jpg"
+  },
+  {
+    "id": 4,
+    "name": "name4",
+    "details": "details",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr4GYcXfqV9qBzMury0oEGt3aHZQaQZNHfLQ&usqp=CAU"
+  }
+]
+
