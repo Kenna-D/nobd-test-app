@@ -15,9 +15,9 @@ class App extends Component {
 
   }
 
-  componentDidMount(){
-    this.chosenWands();
-  }
+  // componentDidMount(){
+  //   this.chosenWands();
+  // }
 
   chosenWands = () => {
     axios.get('/api/picked')
@@ -40,8 +40,9 @@ class App extends Component {
   }
 
   editName = (id, newName) => {
+    console.log(newName)
     let body = {name: newName}
-    axios.put(`/api/picked/${id}`)
+    axios.put(`/api/picked/${id}`, body)
       .then(res => {
         this.setState({ chosenElements: res.data })
       })
