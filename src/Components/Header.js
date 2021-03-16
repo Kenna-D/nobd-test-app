@@ -2,9 +2,10 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <div className='header'>
+        <header className='header'>
             <h1 className='headerWords'>Choose Your Wand!</h1>
-        </div>
+            {/* <h3></h3> */}
+        </header>
     )
 }
 

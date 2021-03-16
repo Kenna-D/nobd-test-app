@@ -74,10 +74,14 @@ button{
   /* height: 5vh;
   width: 5vw;
   box-shadow:  5px 5px 15px 2px rgba(0,0,0,0.62); */
-  background-color: black;
+  background-color: #ab9068;
   outline: none;
   border: none;
   font-weight: 900;
   color: white;
   border-radius: 5px;
+}
+button:hover{
+  background-color: white;
+  color: #ab9068;
 }
